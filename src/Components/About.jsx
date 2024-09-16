@@ -1,23 +1,111 @@
+import Typewriter from "typewriter-effect";
+import DOTS from "vanta/src/vanta.dots";
+import TRUNK from "vanta/src/vanta.trunk";
+import { Button } from "@mantine/core";
 import Info from "./User";
+import { useEffect, useState } from "react";
 
 const About = () => {
+  // useEffect(() => {
+  //   TRUNK({
+  //     el: "#vanta",
+  //   });
+  // }, []);
+  const [dots, setDots] = useState(null);
+  const [trunk, setTrunk] = useState(null);
+
+  useEffect(() => {
+    if (!dots) {
+      setDots(
+        DOTS({
+          el: "#bg",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          showLines: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          color: 0x64ffda,
+          color2: 0x204aff,
+          backgroundColor: 0x0a192f,
+          size: 3,
+          spacing: 30,
+        })
+      );
+    }
+    if (!trunk) {
+      setTrunk(
+        TRUNK({
+          el: "#photo",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          color: 0x64ffda,
+          backgroundColor: 0x0a192f,
+          spacing: 0,
+          chaos: 4.0,
+        })
+      );
+    }
+    return () => {
+      if (dots) dots.destroy();
+      if (trunk) trunk.destroy();
+    };
+  }, []);
+
   return (
-    <div className="flex">
-      <div>
-        <div>Hi, I am</div>
-        <div>{Info.name}</div>
-        <div>I'm a</div>
-        <div>
-          I'm a passionate software engineer with a strong foundation in Data
-          Structures and Algorithms. I specialize in the MERN stack which allows
-          me to crafting efficient and scalable full-stack web applications and
-          provide freelance services that exceed client expectations. I am
-          always excited to collaborate with others who share the same
-          enthusiasm for technology. Let's connect and build something great
-          together!
+    <div
+      className="flex justify-around items-center overflow-hidden px-10 h-[80vh] dm-mono-regular"
+      id="bg"
+    >
+      <div className="ml-16 w-3/5 flex flex-col">
+        <div className="text-primaryColor text-xl">Hi, I am</div>
+        <div className="text-white text-[4.1rem] font-extrabold">
+          {Info.name}
         </div>
+        <div className="text-white text-4xl flex font-semibold">
+          I'm a&nbsp;
+          <span className="text-primaryColor">
+            <Typewriter
+              options={{
+                strings: Info.stack,
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </span>
+        </div>
+        <div className="text-textColor text-xl text-justify dm-mono-regular font-bold my-4 w-[95%]">
+          {Info.bio}
+        </div>
+        <Button
+          variant="filled"
+          color="#64FFDA"
+          size="lg"
+          className="!text-bgColor !w-fit"
+          component="a"
+          href="https://github.com/DevByRohit"
+          target="_blank"
+        >
+          Check resume
+        </Button>
       </div>
-      <div></div>
+      <div
+        className="flex justify-center items-center h-[50vh] w-[24vw] overflow-hidden rounded-full mr-10"
+        id="photo"
+      >
+        <img
+          src="./rohitImage.png"
+          alt="profile"
+          className="w-[90%] rounded-full shadow-xl"
+        />
+      </div>
     </div>
   );
 };
