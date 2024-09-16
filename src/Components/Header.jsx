@@ -1,33 +1,38 @@
 import { IconHexagonLetterR } from "@tabler/icons-react";
 import SideBar from "./SideBar";
+
+const links = ["About", "Work", "Experience", "Skills", "Contact"];
+const navLinks = (col = Boolean) => {
+  return links.map((link, index) => (
+    <a
+      className={`${
+        col ? "flex flex-col items-center" : ""
+      } text-textColor hover:text-primaryColor`}
+      href={`#${link}`}
+    >
+      <span className="text-primaryColor">0{index + 1}. </span>
+      {link}
+    </a>
+  ));
+};
 function Header() {
   return (
     <>
       {/* Navigation bar */}
       <nav className="flex bg-bgColor h-[15vh] px-10 dm-mono-medium justify-between items-center">
-        <IconHexagonLetterR size={60} color="#64FFDA" stroke={1.25} />
+        <IconHexagonLetterR
+          className="z-10"
+          size={60}
+          color="#64FFDA"
+          stroke={1.25}
+        />
 
-        <div className="sm:flex gap-4 text-textColor hidden">
-          <a href="#about" className="hover:text-primaryColor">
-            About
-          </a>
-          <a href="#work" className="hover:text-primaryColor">
-            Work
-          </a>
-          <a href="#experience" className="hover:text-primaryColor">
-            Experience
-          </a>
-          <a href="#skills" className="hover:text-primaryColor">
-            Skills
-          </a>
-          <a href="#contact" className="hover:text-primaryColor">
-            Contact
-          </a>
-        </div>
-        <SideBar></SideBar>
+        <div className="md:flex gap-8 hidden">{navLinks(false)}</div>
+        <SideBar />
       </nav>
     </>
   );
 }
 
 export default Header;
+export { navLinks };
