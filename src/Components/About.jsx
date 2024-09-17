@@ -29,7 +29,7 @@ const About = () => {
           scaleMobile: 1.0,
           color: 0x64ffda,
           color2: 0x204aff,
-          backgroundColor: 0x0a192f,
+          backgroundColor: 0x112240,
           size: 3,
           spacing: 30,
         })
@@ -47,7 +47,7 @@ const About = () => {
           scale: 1.0,
           scaleMobile: 1.0,
           color: 0x64ffda,
-          backgroundColor: 0x0a192f,
+          backgroundColor: 0x112240,
           spacing: 0,
           chaos: 4.0,
         })
@@ -61,17 +61,17 @@ const About = () => {
 
   return (
     <div
-      className="flex justify-around items-center overflow-hidden px-10 h-[80vh] dm-mono-regular"
+      className="flex justify-around items-center overflow-hidden mt-9 h-[80vh] dm-mono-regular"
       id="bg"
     >
-      <div className="ml-16 w-3/5 flex flex-col">
-        <div className="text-primaryColor text-xl">Hi, I am</div>
+      <div className="ml-16 w-[61%] flex flex-col">
+        <div className="text-primaryColor text-3xl font-bold font-mono">Hi, I am</div>
         <div className="text-white text-[4.1rem] font-extrabold">
           {Info.name}
         </div>
-        <div className="text-white text-4xl flex font-semibold">
+        <div className="text-white text-4xl flex font-mono font-bold">
           I'm a&nbsp;
-          <span className="text-primaryColor">
+          <span className="text-primaryColor font-mono font-extrabold">
             <Typewriter
               options={{
                 strings: Info.stack,
@@ -81,7 +81,7 @@ const About = () => {
             />
           </span>
         </div>
-        <div className="text-textColor text-xl text-justify dm-mono-regular font-bold my-4 w-[95%]">
+        <div className="text-textColor text-xl text-justify dm-mono-regular font-bold my-6 w-[95%]">
           {Info.bio}
         </div>
         <Button

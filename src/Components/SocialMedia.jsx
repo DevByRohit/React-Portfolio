@@ -18,16 +18,16 @@ const SocialMedia = () => {
       <a
         href={`${socialLink.link}`}
         target="_blank"
-        className="dm-mono-medium hover:text-primaryColor hover:-translate-x-2 transition transform duration-300 ease-in-out"
+        className=" hover:text-primaryColor hover:-translate-x-2 transition transform duration-300 ease-in-out"
       >
-        <socialLink.icon className="-rotate-90" size={30} />
+        <socialLink.icon className="-rotate-90" size={27} />
       </a>
     );
   });
   return (
-    <div className="flex items-center gap-8 text-textColor fixed bottom-44 -left-36 rotate-90">
+    <div className="flex items-center gap-7 text-textColor fixed bottom-[10rem] left-[-9.1rem] rotate-90">
       {socialIcons}
-      <hr className="border-[2px] w-40 rounded-full bg-textColor border-textColor" />
+      <hr className="border-[1.3px] w-36 rounded-full bg-textColor border-textColor" />
     </div>
   );
 };

@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        bgColor: "#0A192F",
+        bgColor: "#112240",
         textColor: "#8892B0",
         primaryColor: "#64FFDA",
       },
@@ -27,7 +27,6 @@ export default {
         "2xl": "1536px",
         // => @media (min-width: 1536px) { ... }
 
-        
         // max-width
         "2xl-mx": { max: "1535px" },
         // => @media (max-width: 1535px) { ... }
