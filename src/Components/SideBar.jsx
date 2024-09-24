@@ -1,6 +1,6 @@
 import { useDisclosure } from "@mantine/hooks";
 import { Drawer, Button, Burger } from "@mantine/core";
-import { IconHexagonLetterR, IconX } from "@tabler/icons-react";
+// import { IconHexagonLetterR, IconX } from "@tabler/icons-react";
 import { navLinks } from "./Header";
 
 // const links = ["About", "Work", "Experience", "Skills", "Contact"];
@@ -24,20 +24,20 @@ function SideBar() {
         className="md:hidden !-z-10"
         position="right"
         opened={opened}
-        size="50vw"
+        size="55vw"
         onClose={toggle}
       >
         <Drawer.Overlay
-          className="!-z-0"
+          className="!-z-0 !backdrop-opacity-85 blur-sm"
           style={{ backgroundOpacity: 0.5, blur: 4 }}
         />
-        <Drawer.Content className="!-z-0" bg="#0A192F">
+        <Drawer.Content className="!-z-0" bg="#112240">
           <Drawer.Body
-            bg="#0A192F"
+            bg="#112240"
             className="flex flex-col mt-20 gap-5 dm-mono-medium"
           >
             {/* {navigationLinks()} */}
-            {navLinks(true)}
+            {navLinks(true, toggle)}
           </Drawer.Body>
         </Drawer.Content>
       </Drawer.Root>

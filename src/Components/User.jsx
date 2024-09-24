@@ -3,13 +3,14 @@ import {
   IconBrandInstagram,
   IconBrandLeetcode,
   IconBrandLinkedin,
+  IconBrandTwitterFilled,
   IconBrandYoutube,
 } from "@tabler/icons-react";
 
 const Info = {
   name: "Rohit Ahirwar",
-  stack: ["Software Engineer", "Full Stack Web Developer", "Freelancer"],
-  bio: "I'm a passionate software engineer with a strong foundation in Data Structures and Algorithms. I specialize in the MERN stack which allows me to crafting efficient and scalable full-stack web applications and provide freelance services that exceed client expectations. Let's connect and build something great together!.",
+  stack: ["Software Engineer", "Full Stack Developer", "Freelancer"],
+  bio: "I'm a passionate software engineer with a strong foundation in Data Structures and Algorithms. I specialize in the MERN stack which allows me to crafting efficient and scalable full-stack web applications and provide freelance services that exceed client expectations. Let's connect and build something great together!",
 };
 
 // Projects Informations
@@ -97,14 +98,14 @@ const SkillInfo = [
     skills: [
       "HTML",
       "CSS",
-      "SASS",
+      // "SASS",
       "JavaScript",
       "React JS",
       "Angular",
       "Redux",
       "Tailwind CSS",
       "GSAP",
-      "Material UI",
+      // "Material UI",
       "Bootstrap",
     ],
   },
@@ -137,17 +138,15 @@ const SkillInfo = [
   },
 ];
 const socialLinks = [
-  { link: "https://github.com/Code-Mars", icon: IconBrandGithub },
+  { link: "https://github.com/DevByRohit", icon: IconBrandGithub },
+  { link: "https://leetcode.com/u/rohitverma8270", icon: IconBrandLeetcode },
   {
-    link: "https://www.linkedin.com/in/chandrabhan-maurya",
+    link: "https://linkedin.com/in/07-rohit",
     icon: IconBrandLinkedin,
   },
-  { link: "https://www.instagram.com/code.marshal_", icon: IconBrandInstagram },
-  {
-    link: "https://www.youtube.com/channel/UC1ki6jaFvFiH_E79b9FYptw",
-    icon: IconBrandYoutube,
-  },
-  { link: "https://www.leetcode.com/u/CodeMars", icon: IconBrandLeetcode },
+  { link: "https://x.com/home", icon: IconBrandTwitterFilled },
+  // { link: "https://www.instagram.com/code.marshal_", icon: IconBrandInstagram },
+  //
 ];
 
 const ExperienceInfo = [

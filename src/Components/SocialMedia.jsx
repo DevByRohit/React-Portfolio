@@ -25,7 +25,7 @@ const SocialMedia = () => {
     );
   });
   return (
-    <div className="flex items-center gap-7 text-textColor fixed bottom-[10rem] left-[-9.1rem] rotate-90">
+    <div className="flex md-mx:hidden items-center gap-7 text-textColor fixed bottom-[10rem] left-[-9.1rem] rotate-90">
       {socialIcons}
       <hr className="border-[1.3px] w-36 rounded-full bg-textColor border-textColor" />
     </div>

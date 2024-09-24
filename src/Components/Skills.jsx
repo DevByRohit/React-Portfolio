@@ -2,12 +2,12 @@ import { SkillInfo } from "./User";
 import SkillsCards from "./SkillsCards";
 const Skills = () => {
   return (
-    <div className="mx-20 my-10 font-mono">
-      <h1 className="text-4xl text-center mb-10 text-white font-bold">
+    <div className="px-[4rem] my-14 font-mono md-mx:px-8 xs-mx:px-3">
+      <h1 className="text-4xl text-center mb-10 text-white font-bold sm-mx:text-3xl xs-mx:text-3xl">
         <span className="text-primaryColor">03.&nbsp;</span>
         Skills
       </h1>
-      <div className="flex flex-wrap gap-5 justify-between">
+      <div className="flex flex-wrap gap-10 justify-around md-mx:justify-between sm-mx:justify-center bs-mx:gap-5 xs-mx:gap-8">
         {SkillInfo.map((skill, index) => {
           return (
             <SkillsCards
