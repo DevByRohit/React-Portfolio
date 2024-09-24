@@ -11,7 +11,7 @@ import Footer from "./Footer";
 import ResumeViewer from "./ResumeViewer";
 import { useEffect, useState } from "react";
 function HomePage() {
-  const [loaging, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
@@ -20,10 +20,10 @@ function HomePage() {
   return (
     <div
       className={`${
-        loaging ? "flex" : ""
+        loading ? "flex" : ""
       } items-center justify-center overflow-hidden min-h-[100vh]`}
     >
-      {loaging !== true ? (
+      {loading !== true ? (
         <>
           <Header></Header>
           <About></About>

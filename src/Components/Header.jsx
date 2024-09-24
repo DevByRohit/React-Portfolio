@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 // const links = ["About", "Projects", "Skills", "Experience", "Contact"];
 const links = ["About", "Projects", "Skills", "Contact"];
-const navLinks = (col = Boolean, clicked) => {
+const navLinks = (col, clicked) => {
   const handleClick = () => {
     if (clicked) clicked();
   };
@@ -47,7 +47,7 @@ function Header() {
       <nav
         className={`flex ${show ? "translate-y-0" : "-translate-y-28"} ${
           shadow ? "shadow-[0px_10px_30px_-10px_#020c1b]" : ""
-        } dm-mono-regular transition-transform duration-500 ease-in-out fixed w-full z-10 bg-bgColor h-28  px-10  justify-between items-center xs-mx:px-4 xs-mx:h-20 `}
+        } dm-mono-regular transition-transform duration-500 ease-in-out fixed w-full z-10 bg-bgColor h-28  px-10  justify-between items-center xs-mx:px-4 xs-mx:h-20`}
       >
         <IconHexagonLetterR
           className="z-10"

@@ -1,5 +1,5 @@
 import { useDisclosure } from "@mantine/hooks";
-import { Drawer, Button, Burger } from "@mantine/core";
+import { Drawer, Burger, useMatches } from "@mantine/core";
 // import { IconHexagonLetterR, IconX } from "@tabler/icons-react";
 import { navLinks } from "./Header";
 
@@ -17,11 +17,15 @@ import { navLinks } from "./Header";
 
 function SideBar() {
   const [opened, { toggle }] = useDisclosure(false);
+  const size = useMatches({
+    xs: "lg",
+    sm: "lg",
+  });
 
   return (
     <>
       <Drawer.Root
-        className="md:hidden !-z-10"
+        className="bs:hidden !-z-10"
         position="right"
         opened={opened}
         size="55vw"
@@ -34,7 +38,7 @@ function SideBar() {
         <Drawer.Content className="!-z-0" bg="#112240">
           <Drawer.Body
             bg="#112240"
-            className="flex flex-col mt-20 gap-5 dm-mono-medium"
+            className="flex flex-col mt-20 gap-5 dm-mono-regular xs-mx:font-semibold xs-mx:mt-24 md-mx:mt-24 bs-mx:mt-24"
           >
             {/* {navigationLinks()} */}
             {navLinks(true, toggle)}
@@ -44,10 +48,10 @@ function SideBar() {
 
       {/* Burger Icon */}
       <Burger
-        className="md:!hidden !z-10"
+        className="bs:!hidden !z-50 relative"
         color="#64FFDA"
         lineSize={2.5}
-        size="lg"
+        size={size}
         opened={opened}
         onClick={toggle}
       />

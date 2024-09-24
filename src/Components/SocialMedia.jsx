@@ -20,7 +20,9 @@ const SocialMedia = () => {
         target="_blank"
         className=" hover:text-primaryColor hover:-translate-x-2 transition transform duration-300 ease-in-out"
       >
-        <socialLink.icon className="-rotate-90" size={27} />
+        <div data-aos="fade-up-left" data-aos-duration="800">
+          <socialLink.icon className="-rotate-90" size={27} />
+        </div>
       </a>
     );
   });

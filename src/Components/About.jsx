@@ -15,7 +15,7 @@ const About = () => {
   const [dots, setDots] = useState(null);
   const [trunk, setTrunk] = useState(null);
   const btn = useMatches({
-    xs: "xs",
+    xs: "md",
     sm: "sm",
     md: "md",
     lg: "lg",
@@ -105,21 +105,24 @@ const About = () => {
           <div className="text-textColor text-xl text-justify dm-mono-regular font-extrabold my-6 w-[95%] lg-mx:text-base lg-mx:font-semibold lg-mx:my-0 sm-mx:my-0 xs-mx:text-lg xs-mx:font-medium">
             {Info.bio}
           </div>
-          <div className="flex gap-3">
+          <div className="flex gap-3 xs-mx:w-full xs-mx:p-3 xs-mx:justify-around">
             <Button
               variant="filled"
               color="#64FFDA"
               size={btn}
-              className="!text-bgColor !w-fit xs-mx:text-base"
+              radius={"xl"}
+              className="!text-bgColor !w-fit xs-mx:text-base focus-visible:!outline-none"
               onClick={open}
             >
               Check Resume
             </Button>
+
             <Button
               variant="outline"
               color="#64FFDA"
               size={btn}
-              className="!text-primaryColor !w-fit xs-mx:text-base"
+              radius={"xl"}
+              className="!text-primaryColor !w-fit xs-mx:text-base focus-visible:!outline-none"
               rightSection={<IconDownload size={20} />}
               component="a"
               href="/resume.pdf"
