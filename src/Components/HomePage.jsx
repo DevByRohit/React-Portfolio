@@ -10,6 +10,7 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import ResumeViewer from "./ResumeViewer";
 import { useEffect, useState } from "react";
+import { Toaster } from "react-hot-toast";
 function HomePage() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -25,6 +26,7 @@ function HomePage() {
     >
       {loading !== true ? (
         <>
+          <Toaster />
           <Header></Header>
           <About></About>
           <Projects></Projects>

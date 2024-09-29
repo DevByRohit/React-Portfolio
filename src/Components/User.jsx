@@ -21,8 +21,8 @@ const ProjectInfo = [
     image: "Ekart.png",
     live: true,
     technologies: ["React", "Tailwind", "Redux", "Heroicons", "HeadlessUI"],
-    link: "https://code-mars.github.io/Ekart/",
-    github: "https://github.com/Code-Mars/Ekart/",
+    link: "https://github.com/DevByRohit",
+    github: "https://github.com/DevByRohit",
   },
   {
     title: "Facebook Clone",
@@ -37,8 +37,8 @@ const ProjectInfo = [
       "Tabler-Icons",
       "Firebase",
     ],
-    link: "https://github.com/Code-Mars/Facebook-Clone",
-    github: "https://github.com/Code-Mars/Facebook-Clone",
+    link: "https://github.com/DevByRohit",
+    github: "https://github.com/DevByRohit",
   },
   {
     title: "Spotify Clone",
@@ -53,8 +53,8 @@ const ProjectInfo = [
       "MongoDB",
       "Firebase",
     ],
-    link: "https://github.com/Code-Mars/Spotify-Clone",
-    github: "https://github.com/Code-Mars/Spotify-Clone",
+    link: "https://github.com/DevByRohit",
+    github: "https://github.com/DevByRohit",
   },
   {
     title: "Travel Tracker",
@@ -62,8 +62,8 @@ const ProjectInfo = [
     image: "Travel.png",
     live: false,
     technologies: ["React", "Node.js", "PostgresSQL", "Express", "Bootstrap"],
-    link: "https://github.com/Code-Mars/Travel-Tracker",
-    github: "https://github.com/Code-Mars/Travel-Tracker",
+    link: "https://github.com/DevByRohit",
+    github: "https://github.com/DevByRohit",
   },
   {
     title: "Instagram Clone",
@@ -78,8 +78,8 @@ const ProjectInfo = [
       "Firebase",
       "MongoDB",
     ],
-    link: "https://github.com/Code-Mars/Instagram-Clone",
-    github: "https://github.com/Code-Mars/Instagram-Clone",
+    link: "https://github.com/DevByRohit",
+    github: "https://github.com/DevByRohit",
   },
   {
     title: "CodeX Code Editor",
@@ -87,8 +87,8 @@ const ProjectInfo = [
     image: "CodeX.png",
     live: false,
     technologies: ["React", "Tailwind", "Ace Editor"],
-    link: "https://github.com/Code-Mars/CodeX",
-    github: "https://github.com/Code-Mars/CodeX",
+    link: "https://github.com/DevByRohit",
+    github: "https://github.com/DevByRohit",
   },
 ];
 
@@ -123,7 +123,14 @@ const SkillInfo = [
   },
   {
     title: "Languages",
-    skills: ["C", "C++", "Java", "JavaScript", "TypeScript"],
+    skills: [
+      "C",
+      // "C++",
+      "Python",
+      "Java",
+      "JavaScript",
+      "TypeScript",
+    ],
   },
   {
     title: "Tools",
@@ -132,7 +139,8 @@ const SkillInfo = [
       "Github",
       "VS Code",
       "Postman",
-      "MongoDB Compass",
+      // "MongoDB Compass",
+      "Firebase",
       "Spring Tool Suite",
     ],
   },
