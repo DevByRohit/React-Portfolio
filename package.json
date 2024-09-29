@@ -2,7 +2,7 @@
   "name": "my-portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://DevByRohit.github.io/React-Portfolio",
+  "homepage": "https://devbyrohit.github.io/React-Portfolio",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
