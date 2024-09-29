@@ -17,7 +17,7 @@ const TimeLineItems = (items) => {
           <div className="flex gap-2 items-center">
             <img
               className="rounded-lg w-14"
-              src={`/${item.company}.png`}
+              src={`${item.company}.png`}
               alt="companyLogo"
             />
             <div className="flex flex-col">

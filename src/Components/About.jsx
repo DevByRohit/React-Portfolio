@@ -125,7 +125,7 @@ const About = () => {
               className="!text-primaryColor !w-fit xs-mx:text-base focus-visible:!outline-none"
               rightSection={<IconDownload size={20} />}
               component="a"
-              href="/resume.pdf"
+              href="resume.pdf"
               download={Info.name}
             >
               Download
@@ -136,7 +136,7 @@ const About = () => {
           {/* id="photo" for 3D background */}
           <NeonGradientCard className="w-[19.7rem] h-[19rem] items-center justify-center text-center lg-mx:w-[17rem] lg-mx:h-[16.5rem] lg-mx:mr-4 xsm-mx:w-[14rem] xsm-mx:h-[13.5rem]">
             <img
-              src="./rohitImage.png"
+              src="rohitImage.png"
               alt="profile"
               className="w-full h-full rounded-full"
             />
