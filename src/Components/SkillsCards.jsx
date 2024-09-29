@@ -10,7 +10,7 @@ const SkillBadge = (skills) => {
           className="!w-[24px] !p-1"
           variant="filled"
           radius="sm"
-          src={`Icons/${skill}.png`}
+          src={`/Icons/${skill}.png`}
         />
         <div className="text-xl text-textColor font-medium xs-mx:text-lg">
           {skill}
