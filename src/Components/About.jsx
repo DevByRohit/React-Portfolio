@@ -69,6 +69,7 @@ const About = () => {
   return (
     <>
       <div
+      id="About"
         data-aos="zoom-in-up"
         data-aos-duration="800"
         className="mt-[6.5rem] flex relative justify-around items-center overflow-hidden py-10 h-fit dm-mono-regular lg-mx:justify-between bs-mx:flex-wrap bs-mx:flex-col-reverse bs-mx:!overflow-visible bs-mx:gap-5 xs-mx:p-0"

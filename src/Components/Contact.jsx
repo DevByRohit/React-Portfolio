@@ -43,6 +43,7 @@ const handleSubmit=async()=>{
 }
   return (
     <div
+    id="Contact"
       data-aos="flip-left"
       data-aos-duration="800"
       className="my-10 font-mono xs-mx:px-3 md-mx:px-8"

@@ -2,7 +2,7 @@ import { SkillInfo } from "./User";
 import SkillsCards from "./SkillsCards";
 const Skills = () => {
   return (
-    <div className="px-[4rem] my-14 font-mono md-mx:px-8 xs-mx:px-3">
+    <div className="px-[4rem] my-14 font-mono md-mx:px-8 xs-mx:px-3" id="Skills">
       <h1 className="text-4xl text-center mb-10 text-white font-bold sm-mx:text-3xl xs-mx:text-3xl">
         <span className="text-primaryColor">03.&nbsp;</span>
         Skills

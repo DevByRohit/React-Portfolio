@@ -3,7 +3,7 @@ import { ProjectInfo } from "./User";
 
 const Projects = () => {
   return (
-    <div className="px-[4rem] my-10 font-mono md-mx:px-5 xs-mx:px-3 xs-mx:mt-16">
+    <div className="px-[4rem] my-10 font-mono md-mx:px-5 xs-mx:px-3 xs-mx:mt-16" id="Projects">
       <h1 className="text-4xl text-center mb-10 xs-mx:mb-8 text-white font-bold sm-mx:text-3xl xs-mx:text-3xl">
         <span className="text-primaryColor">02.&nbsp;</span>
         Projects
