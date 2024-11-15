@@ -56,6 +56,13 @@ const ResumeViewer = (props) => {
               renderTextLayer={false}
               renderAnnotationLayer={false}
             ></Page>
+            
+            <Page
+              className="w-full !min-w-40 !min-h-14 md-mx:[&>.react-pdf\_\_Page\_\_canvas]:!w-full md-mx:[&>.react-pdf\_\_Page\_\_canvas]:!h-auto"
+              pageNumber={2}
+              renderTextLayer={false}
+              renderAnnotationLayer={false}
+            ></Page>
           </Document>
         </Modal.Body>
       </Modal.Content>
